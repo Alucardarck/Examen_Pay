@@ -14,9 +14,13 @@
 		5BE61D971D7386EF00DC99DB /* Examen_Pay.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5BE61D951D7386EF00DC99DB /* Examen_Pay.xcdatamodeld */; };
 		5BE61D991D7386EF00DC99DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BE61D981D7386EF00DC99DB /* Assets.xcassets */; };
 		5BE61D9C1D7386EF00DC99DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BE61D9A1D7386EF00DC99DB /* LaunchScreen.storyboard */; };
+		5BE61DAC1D738BDF00DC99DB /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 5BE61DAB1D738BDF00DC99DB /* Podfile */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3B6FC6010D142E8B4B0F1876 /* Pods-Examen_Pay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Examen_Pay.release.xcconfig"; path = "Pods/Target Support Files/Pods-Examen_Pay/Pods-Examen_Pay.release.xcconfig"; sourceTree = "<group>"; };
+		3C9AD275E2A8B32893CB90F3 /* Pods_Examen_Pay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Examen_Pay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B3B392B00C3BEB8A0BA3307 /* Pods-Examen_Pay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Examen_Pay.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Examen_Pay/Pods-Examen_Pay.debug.xcconfig"; sourceTree = "<group>"; };
 		5BE61D861D7386EF00DC99DB /* Examen_Pay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Examen_Pay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BE61D8A1D7386EF00DC99DB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5BE61D8C1D7386EF00DC99DB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -28,6 +32,7 @@
 		5BE61D981D7386EF00DC99DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5BE61D9B1D7386EF00DC99DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5BE61D9D1D7386EF00DC99DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5BE61DAB1D738BDF00DC99DB /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +51,8 @@
 			children = (
 				5BE61D881D7386EF00DC99DB /* Examen_Pay */,
 				5BE61D871D7386EF00DC99DB /* Products */,
+				A4B55B4F67F0EDD374535D69 /* Pods */,
+				CD473F289E56C083DF5417F8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -68,6 +75,7 @@
 				5BE61D9D1D7386EF00DC99DB /* Info.plist */,
 				5BE61D951D7386EF00DC99DB /* Examen_Pay.xcdatamodeld */,
 				5BE61D891D7386EF00DC99DB /* Supporting Files */,
+				5BE61DAB1D738BDF00DC99DB /* Podfile */,
 			);
 			path = Examen_Pay;
 			sourceTree = "<group>";
@@ -98,6 +106,23 @@
 			name = Controllers;
 			sourceTree = "<group>";
 		};
+		A4B55B4F67F0EDD374535D69 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4B3B392B00C3BEB8A0BA3307 /* Pods-Examen_Pay.debug.xcconfig */,
+				3B6FC6010D142E8B4B0F1876 /* Pods-Examen_Pay.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CD473F289E56C083DF5417F8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3C9AD275E2A8B32893CB90F3 /* Pods_Examen_Pay.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -105,9 +130,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5BE61DA01D7386EF00DC99DB /* Build configuration list for PBXNativeTarget "Examen_Pay" */;
 			buildPhases = (
+				43D6850576DBA08AD68CD8F6 /* [CP] Check Pods Manifest.lock */,
 				5BE61D821D7386EF00DC99DB /* Sources */,
 				5BE61D831D7386EF00DC99DB /* Frameworks */,
 				5BE61D841D7386EF00DC99DB /* Resources */,
+				03FFA1D8F714E715683417D9 /* [CP] Embed Pods Frameworks */,
+				D55941476D3909E88148FA40 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -157,11 +185,60 @@
 			files = (
 				5BE61D9C1D7386EF00DC99DB /* LaunchScreen.storyboard in Resources */,
 				5BE61D991D7386EF00DC99DB /* Assets.xcassets in Resources */,
+				5BE61DAC1D738BDF00DC99DB /* Podfile in Resources */,
 				5BE61D941D7386EF00DC99DB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		03FFA1D8F714E715683417D9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Examen_Pay/Pods-Examen_Pay-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		43D6850576DBA08AD68CD8F6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D55941476D3909E88148FA40 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Examen_Pay/Pods-Examen_Pay-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5BE61D821D7386EF00DC99DB /* Sources */ = {
@@ -281,6 +358,7 @@
 		};
 		5BE61DA11D7386EF00DC99DB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B3B392B00C3BEB8A0BA3307 /* Pods-Examen_Pay.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Examen_Pay/Info.plist;
@@ -292,6 +370,7 @@
 		};
 		5BE61DA21D7386EF00DC99DB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B6FC6010D142E8B4B0F1876 /* Pods-Examen_Pay.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Examen_Pay/Info.plist;
@@ -320,6 +399,7 @@
 				5BE61DA21D7386EF00DC99DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
